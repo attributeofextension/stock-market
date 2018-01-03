@@ -1,0 +1,27 @@
+{
+  "name": "fcc-leah-carr-stockmarket-app",
+  "version": "1.0.0",
+  "description": "fcc challenge https://www.freecodecamp.org/challenges/chart-the-stock-market",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/attributeofextension/stock-market.git"
+  },
+  "keywords": [
+    "fcc",
+    "stock-market"
+  ],
+  "author": "Leah Carr",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/attributeofextension/stock-market/issues"
+  },
+  "homepage": "https://github.com/attributeofextension/stock-market#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
