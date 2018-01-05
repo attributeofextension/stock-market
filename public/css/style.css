@@ -1,0 +1,23 @@
+
+h2 {
+    text-align:center;
+}
+
+#signature {
+	color: black;
+	font-size: 12px;
+	margin-top: 5px;
+}
+#signature a:link {
+	color: rgb(83, 125, 173);
+}
+#signature a:visited {
+	color: rgb(109, 109, 112);
+}
+#signature a:hover {
+	color: rgb(218, 127, 157);
+	text-decoration:none;
+}
+#signature p {
+    line-height : 5px;
+}

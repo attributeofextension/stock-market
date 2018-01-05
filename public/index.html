@@ -1,5 +1,41 @@
 <html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/css/style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <body>
-  <h2>this is the index</h2>
+  <h2>Stock Market App</h2>
+  <div id="container" style="width:100%; height:400px;"></div>
+  <div class="container-fluid cp2">
+    <div class="row" id="stockList">
+      
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for..." id="stockInput" pattern="[A-Z]{2,5}">
+         <span class="input-group-btn">
+           <button class="btn btn-secondary" type="button" id="addBtn">Add</button>
+         </span>
+       </div>
+      <div class="alert alert-danger invisible" id="alert">
+        <strong id="alertCaption">Success!</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="signature" class="text-center">
+    <p>Written and coded by <a href="https://www.linkedin.com/in/leah-carr-5b2421135/?trk=nav_responsive_tab_profile_pic" target="_blank">Leah Carr</a></p>
+    <p>Github Repository: <a href="https://github.com/attributeofextension/stock-market" target="_blank">https://github.com/attributeofextension/stock-market</a></p>
+  </div>
 </body>
+<script src="/scripts/websocket.js"></script>
+
 </html>
