@@ -17,7 +17,7 @@ var listener = app.listen(process.env.PORT, function () {
 //WEB SOCKET
 const WebSocket = require('ws');
 
-const wss = new WebSocket.Server({ address: "ws://fcc-leah-carr-stock-market-app.herokuapp.com/", port: 80 });
+const wss = new WebSocket.Server({ port: process.env.PORT });
 
 //StockList Data
 var stockList = [];
