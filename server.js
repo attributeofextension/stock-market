@@ -11,13 +11,15 @@ function makeRequestURL(symbol) {
 //ROUTES
 app.use(express.static('public'));
 //PORT==========================================================================
-var listener = app.listen(process.env.PORT, function () {
+/**var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
-});
+});*/
 //WEB SOCKET
+const http = require('http');
 const WebSocket = require('ws');
 
-const wss = new WebSocket.Server({port : 80 });
+const server = http.createServer(app);
+const wss = new WebSocket.Server({server});
 
 //StockList Data
 var stockList = [];
@@ -144,4 +146,6 @@ wss.on('connection', function connection(ws) {
   }
 });
 
-
+server.listen(8080, function listening() {
+  console.log('Listening on %d', server.address().port);
+});
