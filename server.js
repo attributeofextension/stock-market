@@ -17,7 +17,7 @@ var listener = app.listen(process.env.PORT, function () {
 //WEB SOCKET
 const WebSocket = require('ws');
 
-const wss = new WebSocket.Server({ port: process.env.PORT });
+const wss = new WebSocket.Server({ app });
 
 //StockList Data
 var stockList = [];
