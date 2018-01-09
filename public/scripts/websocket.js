@@ -141,7 +141,8 @@ function closeBtnHandler(event) {
 }
 //MAIN FUNCTION=================================================================================
 function loaded(event) {
-  socket = new WebSocket('ws://localhost:8081')
+  var HOST = location.origin.replace(/^http/, 'ws');
+  socket = new WebSocket(HOST);
 
   socket.addEventListener('open', function (event) {
 
